@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "paidoutsincurred"
+version = "0.1.0"
+description = ""
+authors = ["Hannes <hannes.basler@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^1.10.4"
+pandas = "^1.5.3"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.1"
+Flake8-pyproject = "^1.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.flake8]
+ignore = ['E231', 'E241']
+per-file-ignores = [
+    '__init__.py:F401',
+]
+max-line-length = 120
+count = true
